@@ -1,0 +1,579 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LPU New Student FAQ Guide</title>
+
+    <style>
+        /* General Styling */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #f5f3ff;
+            color: #29234a;
+            line-height: 1.6;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6639c6, #a66bea);
+            color: white;
+            text-align: center;
+            padding: 45px 20px;
+        }
+
+        header h1 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 17px;
+        }
+
+        /* Navigation */
+        nav {
+            background: white;
+            padding: 16px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 3px 10px #ddd;
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        nav a {
+            display: inline-block;
+            text-decoration: none;
+            color: #6235b5;
+            font-weight: bold;
+            margin: 6px 12px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ed6a9e;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        /* Introduction */
+        .intro {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+            box-shadow: 0 4px 12px #ddd;
+        }
+
+        .intro h2 {
+            color: #673ab7;
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Categories */
+        .category {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 12px #ddd;
+            scroll-margin-top: 90px;
+        }
+
+        .category h2 {
+            color: #6639c6;
+            border-bottom: 3px solid #c8a8ff;
+            padding-bottom: 10px;
+            margin-bottom: 18px;
+        }
+
+        /* FAQ Questions */
+        details {
+            background: #f1edff;
+            border-radius: 9px;
+            margin: 12px 0;
+            padding: 15px;
+            transition: background 0.3s;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #4b288d;
+        }
+
+        details p {
+            margin-top: 12px;
+            color: #444;
+        }
+
+        details[open] {
+            background: #e7ddff;
+        }
+
+        /* Campus Tour */
+        .tour-content {
+            text-align: center;
+        }
+
+        .tour-content h3 {
+            color: #6639c6;
+            margin-bottom: 10px;
+        }
+
+        .tour-button {
+            display: inline-block;
+            background: #673ab7;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 25px 0;
+            transition: background 0.3s, transform 0.3s;
+        }
+
+        .tour-button:hover {
+            background: #4b288d;
+            transform: translateY(-3px);
+        }
+
+        /* Tips Section */
+        .tips {
+            background: #d9f6ef;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        .tips h2 {
+            color: #087c67;
+            margin-bottom: 10px;
+        }
+
+        .tips ul {
+            padding-left: 25px;
+        }
+
+        /* Support Section */
+        .support {
+            background: #fff0f5;
+            padding: 25px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 25px;
+            scroll-margin-top: 90px;
+        }
+
+        .support h2 {
+            color: #b83270;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #35205e;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+
+            header h1 {
+                font-size: 25px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 5px 8px;
+                font-size: 13px;
+            }
+
+            .container {
+                padding: 12px;
+                margin: 15px auto;
+            }
+
+            .category {
+                padding: 17px;
+            }
+
+            .intro,
+            .tips,
+            .support {
+                padding: 18px;
+            }
+
+            .tour-button {
+                padding: 12px 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🎓 LPU New Student FAQ Guide</h1>
+        <p>Your First Fifteen Days Made Easy!</p>
+        <p>Welcome to University Life</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#admission">Admission</a>
+        <a href="#academic">Academics</a>
+        <a href="#ums">UMS</a>
+        <a href="#campus">Campus Tour</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#support">Support</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+
+        <!-- Introduction -->
+        <section class="intro">
+            <h2>Welcome, Freshers!</h2>
+
+            <p>
+                Starting university can be confusing. This FAQ guide
+                helps newly admitted students find important information
+                about admission, academics, UMS, campus facilities and
+                student support in one place.
+            </p>
+        </section>
+
+        <!-- 1. Admission -->
+        <section class="category" id="admission">
+
+            <h2>📋 1. Admission and Registration</h2>
+
+            <details>
+                <summary>How can I complete my admission process?</summary>
+                <p>
+                    You can visit the official LPU admission website
+                    or physically visit the admission office.
+                    Follow the instructions provided by the university
+                    and submit all required documents.
+                    <a href="https://www.lpu.in/admission"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Visit LPU Admission Website
+                    </a>
+                </p>
+            </details>
+
+            <details>
+                <summary>Which documents are required for admission?</summary>
+                <p>
+                    Students generally need academic certificates,
+                    identity proof, photographs and admission-related
+                    documents. Check the official university instructions
+                    for the exact list.
+                </p>
+            </details>
+
+            <details>
+                <summary>How can I check my admission status?</summary>
+                <p>
+                    Log in to the official student portal (UMS)
+                    or contact the admission department for updates.
+                </p>
+            </details>
+
+            <details>
+                <summary>Whom should I contact for registration problems?</summary>
+                <p>
+                    Contact the LPU helpline at +91-1824-517000
+                    or the admission department for assistance
+                    with registration-related problems.
+                </p>
+            </details>
+
+        </section>
+
+        <!-- 2. Academics -->
+        <section class="category" id="academic">
+
+            <h2>📚 2. Academic Information</h2>
+
+            <details>
+                <summary>How can I check my class timetable?</summary>
+                <p>
+                    Check your timetable through the LPU Touch
+                    mobile application or the University Management
+                    System (UMS).
+                </p>
+            </details>
+
+            <details>
+                <summary>Where can I find my course syllabus?</summary>
+                <p>
+                    Students can check their course syllabus through
+                    the academic portal (UMS) or ask their faculty members.
+                </p>
+            </details>
+
+            <details>
+                <summary>How can I contact my faculty member?</summary>
+                <p>
+                    Students can contact faculty members through
+                    official university communication channels such
+                    as LPU Live or during their available
+                    consultation hours.
+                </p>
+            </details>
+
+            <details>
+                <summary>Where can I check examination details?</summary>
+                <p>
+                    Examination schedules and related announcements
+                    are generally available through the student portal
+                    or the LPU Touch application.
+                </p>
+            </details>
+
+        </section>
+
+        <!-- 3. UMS -->
+        <section class="category" id="ums">
+
+            <h2>💻 3. UMS Portal</h2>
+
+            <details>
+                <summary>What is UMS?</summary>
+                <p>
+                    UMS stands for University Management System.
+                    It provides access to important student and
+                    academic information.
+                </p>
+            </details>
+
+            <details>
+                <summary>How can I log in to UMS?</summary>
+                <p>
+                    Open the official UMS portal and enter your
+                    university-provided login credentials.
+                </p>
+            </details>
+
+            <details>
+                <summary>What should I do if I forget my password?</summary>
+                <p>
+                    Use the password recovery option if available
+                    or contact the university's IT support team.
+                </p>
+            </details>
+
+            <details>
+                <summary>What information is available on UMS?</summary>
+                <p>
+                    Students can access relevant academic information,
+                    attendance, examination details and other
+                    university services, depending on their access.
+                </p>
+            </details>
+
+        </section>
+<!-- 4. Campus Tour -->
+<section class="category" id="campus">
+
+    <h2>🏫 4. Campus Tour</h2>
+
+    <div class="tour-content">
+
+        <h3>🌍 Explore LPU in 360°</h3>
+
+        <p>
+            Explore Lovely Professional University
+            through its official virtual campus tour.
+        </p>
+
+        <a href="https://www.lpu.in/"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="tour-button">
+
+            🌐 Visit Official LPU Website
+
+        </a>
+
+        <p>
+            Open the website and find the
+            "Take a 360° Campus Tour" section.
+        </p>
+
+    </div>
+
+</section>
+
+                <p>
+                    Discover campus buildings, facilities
+                    and important university locations.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- 5. Campus Facilities -->
+        <section class="category" id="facilities">
+
+            <h2>🏫 5. Campus Facilities</h2>
+
+            <details>
+                <summary>Where is the university library?</summary>
+                <p>
+                    Students can ask the DSR office or the
+                    university help desk for directions to the library.
+                </p>
+            </details>
+
+            <details>
+                <summary>Are sports facilities available on campus?</summary>
+                <p>
+                    Yes, students can explore the university sports
+                    facilities and check the rules for participation.
+                </p>
+            </details>
+
+            <details>
+                <summary>Where can I find the cafeteria?</summary>
+                <p>
+                    Students can use the campus map or ask campus
+                    staff for directions to the cafeteria.
+                </p>
+            </details>
+
+            <details>
+                <summary>How can I find important campus locations?</summary>
+                <p>
+                    Use the campus map and university information
+                    desk to locate important buildings and facilities.
+                </p>
+            </details>
+
+        </section>
+
+        <!-- 6. Student Support -->
+        <section class="category" id="support">
+
+            <h2>🤝 6. Student Support and Guidance</h2>
+
+            <details>
+                <summary>Whom should I contact for academic difficulties?</summary>
+                <p>
+                    Students can approach their faculty members,
+                    academic mentors or designated student support staff.
+                </p>
+            </details>
+
+            <details>
+                <summary>Is guidance available for new students?</summary>
+                <p>
+                    Students can seek guidance from mentors,
+                    faculty members and the university student
+                    support team.
+                </p>
+            </details>
+
+            <details>
+                <summary>What should I do if I face a technical problem?</summary>
+                <p>
+                    Contact the university IT help desk for
+                    assistance with technical problems.
+                </p>
+            </details>
+
+            <details>
+                <summary>Where can I get general student assistance?</summary>
+                <p>
+                    Visit the university help desk or contact
+                    the relevant student support department.
+                </p>
+            </details>
+
+        </section>
+
+        <!-- Helpful Tips -->
+        <section class="tips">
+
+            <h2>⭐ Helpful Tips for Freshers</h2>
+
+            <ul>
+                <li>Keep your university ID card with you.</li>
+                <li>Check your timetable regularly.</li>
+                <li>Learn how to use the UMS portal.</li>
+                <li>Explore important campus locations.</li>
+                <li>Stay connected with faculty and classmates.</li>
+                <li>Ask for help whenever you face difficulties.</li>
+            </ul>
+
+        </section>
+
+        <!-- Need More Help -->
+        <section class="support">
+
+            <h2>Need More Help?</h2>
+
+            <p>
+                For further assistance, contact the relevant
+                university department or visit the official
+                university help desk.
+            </p>
+
+            <p>
+                <strong>
+                    Stay confident and enjoy your university journey!
+                </strong>
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>© 2026 LPU New Student FAQ Guide</p>
+
+        <p>
+            Designed to make the first fifteen days easier for freshers.
+        </p>
+
+    </footer>
+
+</body>
+</html>
